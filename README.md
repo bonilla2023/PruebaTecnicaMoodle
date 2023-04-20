@@ -57,3 +57,5 @@ Se realiza esta elección por su capacidad de manejar grandes cantidades de dato
 8. El modelo de datos que cumple con los requerimientos incluiría las siguientes entidades: pacientes, médicos, hospitales, historias clínicas, citas, enfermedades. Se usaría la tercera forma normal para asegurar la integridad y reducción de redundancia de los datos.
 
 9. CONSULTAS SQL
+
+SELECT hospital, COUNT(medico) FROM medicos GROUP BY hospital; SELECT medico,nombre, COUNT(DISTINCT paciente) FROM historias_clinicas JOIN citas ON citas.historia_id = historias_clinicas.id JOIN medicos ON medicos.id = citas.medico_id WHERE enfermedad = "xxxx" AND YEAR(fecha) = 2021 GROUP BY medico; SELECT sala, YEAR(fecha), MONTH(fecha), COUNT(DISTINCT historia_id) AS ocupacion FROM citas GROUP BY sala, YEAR(fecha), MONTH(fecha); SELECT enfermedad, COUNT(DISTINCT paciente_id) FROM historias_clinicas GROUP BY enfermedad;
