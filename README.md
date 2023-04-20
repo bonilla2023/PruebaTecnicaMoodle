@@ -33,3 +33,15 @@ En las historias clínicas se debe incluir si el paciente falleció.
             Realice un reporte que indique cuales son las enfermedades mas presentadas por los pacientes.
 
 Finalmente envíe y sustente la soluciones en un espacio Git con control de versiones y en un video corto de no mas de 5 min sustente el proyecto desarrollado
+
+## Solucion Algoritmia 1 al 3
+
+1. Para mejorar la atención de los pacientes
+Se requiere información adicional como el historial de enfermedades de los pacientes, así como información sobre medicamentos y alergias.
+
+2. Para la optimización de los espacios y médicos en los hospitales.
+Se puede utilizar un enfoque basado en la demanda por hora del día, día de la semana, mes y temporada del año. De esta manera, se pueden prever las necesidades futuras y asignar los recursos de manera más eficiente.
+
+3. Para calcular la fecha más próxima de la solicitud de una cita.
+Se debe tener en cuenta la disponibilidad de los médicos, la prioridad del paciente y la gravedad de la situación.
+
