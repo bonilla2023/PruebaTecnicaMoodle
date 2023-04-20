@@ -33,3 +33,6 @@ En las historias clínicas se debe incluir si el paciente falleció.
             Realice un reporte que indique cuales son las enfermedades mas presentadas por los pacientes.
 
 Finalmente envíe y sustente la soluciones en un espacio Git con control de versiones y en un video corto de no mas de 5 min sustente el proyecto desarrollado
+
+
+
