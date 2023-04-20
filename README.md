@@ -45,3 +45,20 @@ Se puede utilizar un enfoque basado en la demanda por hora del día, día de la 
 3. Para calcular la fecha más próxima de la solicitud de una cita.
 Se debe tener en cuenta la disponibilidad de los médicos, la prioridad del paciente y la gravedad de la situación.
 
+5. Se selecciona el framework Django para la implementación del sistema.
+
+6. Para la base de datos se utilizaría un motor de base de datos relacional como MySQL.
+Se realiza esta elección por su capacidad de manejar grandes cantidades de datos y su flexibilidad de manejo de transacciones complejas.
+
+## Solucion Base de Datos
+
+7. Se implementaría un modelo de datos relacional utilizando tablas para cada una de las entidades involucradas para asegurar la integridad de los datos. Se usarían claves foráneas para relacionar las tablas.
+
+8. El modelo de datos que cumple con los requerimientos incluiría las siguientes entidades: pacientes, médicos, hospitales, historias clínicas, citas, enfermedades. Se usaría la tercera forma normal para asegurar la integridad y reducción de redundancia de los datos.
+
+9. CONSULTAS SQL
+
+SELECT hospital, COUNT(medico) FROM medicos GROUP BY hospital;
+SELECT medico,nombre, COUNT(DISTINCT paciente) FROM historias_clinicas JOIN citas ON citas.historia_id = historias_clinicas.id JOIN medicos ON medicos.id = citas.medico_id WHERE enfermedad = "xxxx" AND YEAR(fecha) = 2021 GROUP BY medico;
+SELECT sala, YEAR(fecha), MONTH(fecha), COUNT(DISTINCT historia_id) AS ocupacion FROM citas GROUP BY sala, YEAR(fecha), MONTH(fecha);
+SELECT enfermedad, COUNT(DISTINCT paciente_id) FROM historias_clinicas GROUP BY enfermedad;
