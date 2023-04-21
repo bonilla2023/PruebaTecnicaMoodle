@@ -59,3 +59,9 @@ Se realiza esta elección por su capacidad de manejar grandes cantidades de dato
 9. CONSULTAS SQL
 
 SELECT hospital, COUNT(medico) FROM medicos GROUP BY hospital; SELECT medico,nombre, COUNT(DISTINCT paciente) FROM historias_clinicas JOIN citas ON citas.historia_id = historias_clinicas.id JOIN medicos ON medicos.id = citas.medico_id WHERE enfermedad = "xxxx" AND YEAR(fecha) = 2021 GROUP BY medico; SELECT sala, YEAR(fecha), MONTH(fecha), COUNT(DISTINCT historia_id) AS ocupacion FROM citas GROUP BY sala, YEAR(fecha), MONTH(fecha); SELECT enfermedad, COUNT(DISTINCT paciente_id) FROM historias_clinicas GROUP BY enfermedad;
+
+
+
+
+https://user-images.githubusercontent.com/131383282/233644204-f1f610ad-a3ac-4393-b7f8-5c9adcb8711c.mp4
+
